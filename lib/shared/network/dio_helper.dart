@@ -5,7 +5,7 @@ class DioHelperPayment {
 
   static init() {
     dio = Dio(BaseOptions(
-        baseUrl: ' https://accept.paymob.com/api',
+        baseUrl: "https://accept.paymob.com/api/",
         receiveDataWhenStatusError: true));
   }
 
@@ -21,7 +21,7 @@ class DioHelperPayment {
 
   static Future<Response> postData(
       {required String url,
-      required Map<String, dynamic> query,
+      Map<String, dynamic>? query,
       required Map<String, dynamic> data}) async {
     return await dio.post(url, data: data, queryParameters: query);
   }

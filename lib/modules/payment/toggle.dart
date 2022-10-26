@@ -24,7 +24,7 @@ class ToggleScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
               child: InkWell(
                 onTap: () {
-                  navigateTo(context, const VisaCard());
+                  navigateAndFinish(context, const VisaCard());
                 },
                 child: Container(
                   height: 50,
@@ -48,7 +48,7 @@ class ToggleScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
               child: InkWell(
                 onTap: () {
-                  navigateTo(context, const RefCode());
+                  navigateAndFinish(context, const RefCode());
                 },
                 child: Container(
                   height: 50,

@@ -131,10 +131,4 @@ class PaymentCubit extends Cubit<PaymentState> {
       emit(PaymentRefCodeErrorState(error.toString()));
     });
   }
-
-  bool value = true;
-  bool changeCheckBox(newValue) {
-    value = newValue;
-    return newValue;
-  }
 }

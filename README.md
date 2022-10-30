@@ -1,4 +1,4 @@
 # Paymob_integration 
 
-This repo contains how to deal with paymob integration 
+This repo contains integration with payment getway (paymob) using card and refrence code 
 
